@@ -1,11 +1,11 @@
-importScripts("../../node_modules/@maslick/koder/zbar.js");
-importScripts("../../node_modules/@maslick/koder/browser.js");
+importScripts("https://cdn.jsdelivr.net/npm/@maslick/koder@1.3.2/zbar.js");
+importScripts("https://cdn.jsdelivr.net/npm/@maslick/koder@1.3.2/browser.js");
 
 
 
 (async () => {
     // Initialize Koder
-    const koder = await new Koder().initialize({ wasmDirectory: "../../node_modules/@maslick/koder" });
+    const koder = await new Koder().initialize({ wasmDirectory: "https://cdn.jsdelivr.net/npm/@maslick/koder" });
 
     // Listen for messages from JS main thread containing raw image data
     self.addEventListener('message', event => {
